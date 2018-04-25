@@ -1,0 +1,70 @@
+<!-- We don't need full layout here, because this page will be parsed with Ajax-->
+<!-- Top Navbar-->
+<style>
+    .bbig {
+    font-size: 20px;
+    height: 60px;
+    line-height: 20px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    }
+</style>
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="left"><a href="#" class="back link"> <i class="icon icon-back"></i><span>Back</span></a></div>
+        <div class="center sliding">Cart</div>
+        <div class="right">
+            <!-- Right link contains only icon - additional "icon-only" class--><a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a>
+        </div>
+    </div>
+</div>
+<div class="pages">
+    <!-- Page, data-page contains page name-->
+    <div data-page="view-cart" class="page">
+        <!-- Scrollable page content-->
+        <div class="page-content">
+            <div class="content-block no-margin" style="padding:15px;padding-top:0;padding-bottom:0;">
+                <div class="content-block-inner no-margin no-padding" style="padding-top:0;">
+                    <div id="cartBulkyMsg" style="padding:7px;font-size:medium;display:none;background-color:#f2dede;border:solid 1px #ebccd1;color:#a94442;border-radius:4px;"></div>
+                    <div id="cartTotalContent" class="cartTotalContent">
+                        <div class="row mrTopBot10">
+                            <div class="col-100">
+                                <!--a href="checkout.html"-->
+                                <a href="checkout.html" id="chkoutbtn" class="button button-big button-green" style="text-transform: uppercase; letter-spacing: 2px; font-weight: bold;"><i class="ion-ios-cart-outline" style="font-size: x-large;"></i>&nbsp;Checkout&nbsp;($<span id="cartTotalPrice"></span>)</a>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-bottom:7px;display:none;">
+                            <h3 class="mrTopBot5 color333"><span class="cartTotalItems"></span> Items In Your Cart.</h3>       
+                        </div>
+                    </div>
+
+                    <div class="buttons-row" style="margin-bottom:7px;">
+                        <a href="#cartTab" class="button button-big active tab-link" style="height:60px;line-height: 20px;
+    padding-bottom: 20px;padding-top: 10px;font-size:medium;letter-spacing: 2px;">Products<br />(<span class="cartTotalItems">0</span>)</a>
+                        <a href="#labelTab" class="button button-big tab-link" style="height:60px;line-height: 20px;
+    padding-bottom: 20px;padding-top: 10px;font-size:medium;letter-spacing: 2px;">Labels<br />(<span id="labelQty">0</span>)</a>
+                        <a href="#returnsTab" class="button button-big tab-link" style="height:60px;line-height: 20px;
+    padding-bottom: 20px;padding-top: 10px;font-size:medium;letter-spacing: 2px;display:none;">Returns<br />(<span id="returnsQty">0</span>)</a>
+                    </div>
+                    <div class="tabs">
+                        <div id="cartTab" class="tab active">
+                            <div id="cartContent">
+
+                            </div>
+                        </div>
+                        <div id="labelTab" class="tab">
+                            <div id="labelContent">
+
+                            </div>
+                        </div>
+                        <div id="returnsTab" class="tab" style="display:none;">
+                            <div id="returnContent">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

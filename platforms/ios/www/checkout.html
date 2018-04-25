@@ -1,0 +1,131 @@
+<!-- We don't need full layout here, because this page will be parsed with Ajax-->
+<!-- Top Navbar-->
+
+
+<!--href="view-cart.html" data-force="true"--> 
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="left"><a id="checkoutbackbutton" href="view-cart.html" data-force="true" class="back link"> <i class="icon icon-back"></i><span>Back</span></a></div>
+        <div class="center sliding" id="productSelect">Checkout</div>
+        <div class="right">
+           <a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="pages">
+    <div data-page="checkout" class="page">
+
+        <!-- Scrollable page content-->
+        <div class="page-content">
+
+            <div class="list-block no-margin">
+                <ul>
+                    
+                    <li>
+                        <div class="item-content">
+                            <div class="item-inner">
+                                <div class="label">Labels Quantity:</div>
+                                <div id="labelsQuantity">.....
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li style="display:none;">
+                        <div class="item-content">
+                            <div class="item-inner">
+                                <div class="label">Returns Quantity:</div>
+                                <div id="returnsQuantity">.....
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li style="display:none;">
+                        <div class="item-content">
+                            <div class="item-inner">
+                                <div class="label">Returns Total:</div>
+                                <div id="returnsTotal">.....
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="item-content">
+                            <div class="item-inner">
+                                <div class="label">Products Quantity</div>
+                                <div id="productsQuantity">.....
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="item-content">
+                            <div class="item-inner">
+                                <div class="label" >Tobacco:</div>
+                                <div id="totalTobacco">.....
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="item-content">
+                            <div class="item-inner">
+                                <div class="label">General Marchandies:</div>
+                                <div id="totalMarchandies">.....
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="item-content">
+                            <div class="item-inner">
+                                <div class="label">Total:</div>
+                                <div id="grandTotal">.....
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li id="shippingli">
+                        <div class="item-content">
+                            <div class="item-inner">
+                                <div class="label">Shipping Method:</div>
+                                <div id="shippingMethod">
+                                    <select id="deliverymodeselect">
+                                        <option value="0">-- Select Option --</option>
+                                        <option value="1">Pick up</option>
+                                        <option value="2">Delivery</option>
+                                        <option value="4"></option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="align-top">
+                        <div class="item-content">
+                            <div class="item-inner">
+                                <div class="label">Comments:</div>
+                                    <textarea style="padding:0px 10px 10px 20px;" id="comments"></textarea>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="col-100" style="margin:20px;">
+                    <div id="checkcartbtn" class="button button-big button-fill color-green" style="text-transform:uppercase; letter-spacing:2px;"><i class="ion-ios-checkmark-outline"></i>&nbsp;Submit Order</div>
+                    <div id="processingbtn" class="button button-big button-fill color-orange" style="text-transform:uppercase; letter-spacing:2px;display:none;">&nbsp;Processing ...</div>
+                    <div style="text-align:justify; margin-top:15px;font-size:small;" id="CheckOutPolicy"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

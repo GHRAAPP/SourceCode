@@ -1,0 +1,11 @@
+{
+     "android": {
+         "release": {
+             "keystore": "itformulation.jks",
+             "storePassword": "okay786",
+             "alias": "ghra",
+             "password" : "okay786",
+             "keystoreType": "jks"
+         }
+     }
+ }

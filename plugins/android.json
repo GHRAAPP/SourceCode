@@ -1,0 +1,36 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "com.xmartlabs.cordova.market": {
+            "PACKAGE_NAME": "com.itformulation.cart"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.itformulation.cart"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "com.itformulation.cart"
+        },
+        "cordova-plugin-keyboard-ams": {
+            "PACKAGE_NAME": "com.itformulation.cart"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "com.itformulation.cart"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.itformulation.cart"
+        },
+        "cordova-sqlite-storage": {
+            "PACKAGE_NAME": "com.itformulation.cart"
+        },
+        "cordova-plugin-cszbar": {
+            "PACKAGE_NAME": "com.itformulation.cart"
+        }
+    },
+    "dependent_plugins": {}
+}

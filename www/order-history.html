@@ -1,0 +1,29 @@
+<!-- We don't need full layout here, because this page will be parsed with Ajax-->
+<!-- Top Navbar-->
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="left"><a href="index.html" data-force="true" class="back link"> <i class="icon icon-back"></i><span>Back</span></a></div>
+        <div class="center sliding">Order History</div>
+        <div class="right">
+            <!-- Right link contains only icon - additional "icon-only" class--><a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a>
+        </div>
+    </div>
+</div>
+<div class="pages">
+    <!-- Page, data-page contains page name-->
+    <div data-page="orderHistory" class="page">
+        <!-- Scrollable page content-->
+        <div class="page-content">
+            <div class="row"><h3 class="color333" style="margin-left:17px;">Your recent orders.</h3></div>
+            <div class="list-block media-list" style="margin-top:0px;" id="oderHistoryList"></div>
+
+            <div id="noconnectionfoundcard" class="card" style="display:none;">
+                <div class="card-header"><!--<i class="ion-alert-circled"></i>&nbsp;-->No Connection Found!!</div>
+                <div class="card-content">
+                    <div class="card-content-inner">This feature requires internet connection, please check your network settings for connection.</div>
+                </div>
+            </div> 
+
+        </div>
+    </div>
+</div>

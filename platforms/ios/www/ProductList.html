@@ -1,0 +1,48 @@
+<!-- We don't need full layout here, because this page will be parsed with Ajax-->
+<!-- Top Navbar-->
+
+
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="left"><a href="#" class="back link"> <i class="icon icon-back"></i><span>Back</span></a></div>
+        <div class="center sliding">Product List</div>
+        <div class="right">
+            <!-- Right link contains only icon - additional "icon-only" class--><a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a>
+        </div>
+    </div>
+</div>
+
+<div class="pages">
+    <!-- Page, data-page contains page name-->
+    <div data-page="ProductList" class="page">
+
+        <!-- Scrollable page content-->
+
+        <form class="searchbar searchbar-init" data-search-list=".list-block-searchpl" data-search-in=".search" data-found=".searchbar-found" data-not-found=".searchbar-not-found">
+            <div class="searchbar-input">
+                <input id="plsearch" type="search" placeholder="Search in this Product List..">
+                <a href="#" class="searchbar-clear"></a>
+            </div>
+            <a href="#" class="searchbar-cancel">Cancel</a>
+        </form>
+
+        <div class="searchbar-overlay"></div>
+
+        <div class="page-content">
+
+            <div class="content-block no-margin no-padding">
+                <div class="content-block-title contentTitle" style="font-size:x-small;" id="breadCrum"></div>
+            </div>
+            <div class="content-block searchbar-not-found">
+                <div class="content-block-inner">Nothing found</div>
+            </div>
+            <!--<div class="list-block list-block-searchpl searchbar-found no-margin" id="productsListContent">
+                <p style="text-align:center">Please wait ....</p>
+
+                
+        </div>-->
+            <div class="list-block media-list list-block-searchpl searchbar-found no-margin" id="productsListContent">
+                <p style="text-align:center">Please wait ....</p>
+</div>
+    </div>
+</div>

@@ -1,0 +1,112 @@
+<!-- We don't need full layout here, because this page will be parsed with Ajax-->
+<!-- Top Navbar-->
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="left"><a href="order-history.html" data-force="true" class="back link"> <i class="icon icon-back"></i><span>Back</span></a></div>
+        <div class="center sliding">Order Detail #<span id="oderDetailId"></span></div>
+        <div class="right">
+            <!-- Right link contains only icon - additional "icon-only" class--><a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a>
+        </div>
+    </div>
+</div>
+<div class="pages">
+    <!-- Page, data-page contains page name-->
+    <div data-page="orderHistoryDetailList" class="page">
+
+        <!-- Search Bar -->
+        <form class="searchbar searchbar-init" data-search-list=".list-block-searchh" data-search-in=".item-title" data-found=".searchbar-found" data-not-found=".searchbar-not-found">
+            <div class="searchbar-input">
+                <input id="shsearch" type="search" placeholder="Search....">
+                <a href="#" class="searchbar-clear"></a>
+            </div>
+            <a href="#" class="searchbar-cancel">Cancel</a>
+        </form>
+
+        <div class="searchbar-overlay"></div>
+
+        <!-- Scrollable page content-->
+        <div class="page-content">
+            <div class="row" style="display:none;">
+                <h3 class="color333 fullWidth" style="margin:5px 17px;">
+                    <span>
+                        <a href="#" id="editOrder" class="button button-fill color-green" style="text-transform: uppercase; letter-spacing: 2px; font-weight: bold;">Add More Items (via Cart)</a>
+                    </span>
+                </h3>
+            </div>
+
+            <div class="row">
+                <h3 class="color333 fullWidth" style="margin:5px 17px;">
+                    <span id="orderDetailDate" style="float:left;"></span>
+
+                    <span style="float:right;display:none;">
+                        <a href="#" id="cancelOrder" class="button button-fill color-red" style="text-transform: uppercase; font-size:small; letter-spacing: 2px; font-weight: bold;">Cancel Order</a>                       
+                    </span>
+                </h3>
+            </div>
+            <div class="row">
+                <h3 class="color333 fullWidth" style="margin:5px 17px;">
+                    <span style="float:left;">Total</span>
+                    <span style="float:right;">
+                        <span id="orderDetailOldTotal" style="color:#ff3b30;text-decoration:line-through;">
+                           
+                        </span>&nbsp;&nbsp;<span id="orderDetailTotal"></span>
+                    </span>
+                </h3>
+            </div>
+            <div class="row">
+                <h3 class="color333 fullWidth" style="margin:5px 17px;">
+                    <span style="float:left;">Tobacco</span>
+                    <span style="float:right;">
+                        <span id="orderDetailOldTobacco" style="color:#ff3b30;text-decoration:line-through;">
+                        </span>&nbsp;&nbsp;<span id="orderDetailTobacco"></span>
+                    </span>
+                </h3>
+            </div>
+            <div class="row">
+                <h3 class="color333 fullWidth" style="margin:5px 17px;">
+                    <span style="float:left;">Groceries</span>
+                    <span style="float:right;">
+                        <span id="orderDetailOldGroceries" style="color:#ff3b30;text-decoration:line-through;">
+                        </span>&nbsp;&nbsp;<span id="orderDetailGroceries"></span>
+                    </span>
+                </h3>
+            </div>
+            <div class="row">
+                <h3 class="color333 fullWidth" style="margin:5px 17px;">
+                    <span id="updateshipmethod" style="float:left;">Shipping Method</span>
+                    <!--<span id="deliverystatus" style="float:right;">                        
+                    </span>-->
+                    <select id="deliverystatus" style="float:right; height:30px;">
+                        <option value="1">PICK UP</option>
+                        <option value="2">DELIVERY</option>
+                        <option value="3">RETURN</option>
+                        <option value="4"></option>
+                    </select>
+
+                </h3>
+            </div>
+            <div class="row">
+                <h3 class="color333 fullWidth" style="margin:5px 17px;">
+                    <span style="float:left;">Order Status</span>
+                    <span id="orderstatus" style="float:right;"></span>
+                </h3>
+            </div>
+          
+            <div class="content-block searchbar-not-found">
+                <div class="content-block-inner">Nothing found</div>
+            </div>
+
+            <div class="list-block list-block-searchh searchbar-found media-list no-margin" id="orderHistoryDetail">
+            </div>
+
+            <div id="noconnectionfoundcardoh" class="card" style="display:none;">
+                <div class="card-header"><!--<i class="ion-alert-circled"></i>&nbsp;-->No Connection Found!!</div>
+                <div class="card-content">
+                    <div class="card-content-inner">This feature requires internet connection, please check your network settings for connection.</div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>

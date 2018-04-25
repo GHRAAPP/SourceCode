@@ -1,0 +1,75 @@
+<!-- We don't need full layout here, because this page will be parsed with Ajax-->
+<!-- Top Navbar-->
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="left"><a href="#" class="back link"> <i class="icon icon-back"></i><span>Back</span></a></div>
+        <div class="center sliding">About</div>
+        <div class="right">
+            <!-- Right link contains only icon - additional "icon-only" class--><a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a>
+        </div>
+    </div>
+</div>
+<div class="pages">
+    <!-- Page, data-page contains page name-->
+    <div data-page="about" class="page">
+        <!-- Scrollable page content-->
+        <div class="page-content">
+            <div class="content-block no-margin">
+                <div class="content-block-inner">
+                    <div class="login-screen-title"><a href="" onclick="window.open('https://www.ghraonline.com/', '_system');"><img src="img/log.png" style="width:30%;"></a></div>
+                    <h3 style="text-align:center;" class="no-margin">Version 2.0.0</h3>
+                    <!--<h4 style="text-align:center;font-weight:normal; margin-top:0;">&copy;&nbsp;<span id="copyYear"></span> by <a href="#" onclick="window.open('http://www.itformulation.com', '_system');">IT Formulation.</a> &nbsp;All rights reserved.</h4>-->
+                    <div class="list-block" style="margin:20px 0">
+                        <ul>
+                            <!-- Text inputs -->
+                            <li>
+                                <div class="item-content">
+
+                                    <div class="item-inner">
+                                        <div class="label"><span id="companyLongName"></span>&nbsp;(<span id="companyShortName"></span>)</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-content">
+
+                                    <div class="item-inner">
+                                        <div class="label" id="companyAddress"></div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-content">
+
+                                    <div class="item-inner">
+                                        <div class="label">
+                                            Phone:&nbsp;<span id="companyPhone"></span><br />
+                                            Fax:&nbsp;<span id="companyFax"></span><br />
+                                            E-mail:&nbsp;<span id="companyEmail"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-content">
+
+                                    <div class="item-inner">
+                                        <div class="label">
+                                            <strong>Office Hours</strong><br />
+                                            <span id="companyTime"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li style="margin:10px;">
+                                <h3 class="no-margin" style="text-align:center; margin-bottom:5px;">Terms &amp; Privacy Policy</h3>
+                                <span id="storePolicy"></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--<a href="#" style="font-weight:bold;" onclick="window.open('http://www.itformulation.com', '_system');">-->

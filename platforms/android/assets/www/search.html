@@ -1,0 +1,43 @@
+<!-- We don't need full layout here, because this page will be parsed with Ajax-->
+<!-- Top Navbar-->
+
+
+
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="left"><a href="#" class="back link"> <i class="icon icon-back"></i><span>Back</span></a></div>
+        <div class="center sliding" id="productSelect">Search Products</div>
+        <div class="right">
+            <!-- Right link contains only icon - additional "icon-only" class--><a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="pages">
+    <div data-page="search" class="page">
+
+
+        <!-- Scrollable page content-->
+        <form class="searchbar" id="searchProduct">
+            <div class="searchbar-input">
+                <input type="search" placeholder="Search Product" id="mainSearch">
+            </div>
+        </form>
+
+
+        <div class="page-content">
+
+            <div class="content-block searchbar-not-found no-margin" id="searchnotfound" style="display:none;">
+                <div class="content-block-inner" style="text-align:center;">No product found.</div>
+            </div>
+
+
+            <div class="list-block media-list no-margin" id="searchType">
+
+            </div>
+            <input type="checkbox" id="searchcheck" style="height:0px;width:0px;margin:0px;padding:0px;" />
+
+        </div>
+    </div>
+</div>

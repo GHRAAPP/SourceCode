@@ -1,0 +1,47 @@
+﻿<!-- We don't need full layout here, because this page will be parsed with Ajax-->
+<!-- Top Navbar-->
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="left"><a href="promotion.html" data-force="true" class="back link"> <i class="icon icon-back"></i><span>Back</span></a></div>
+        <div class="center sliding">Promotion Detail</div>
+        <div class="right">
+            <!-- Right link contains only icon - additional "icon-only" class--><a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a>
+        </div>
+    </div>
+</div>
+<div class="pages">
+    <!-- Page, data-page contains page name-->
+    <div data-page="promotion-details" class="page">
+
+        <!-- Search Bar -->
+        <form class="searchbar searchbar-init" data-search-list=".list-block-searchh" data-search-in=".item-title" data-found=".searchbar-found" data-not-found=".searchbar-not-found">
+            <div class="searchbar-input">
+                <input id="shsearch" type="search" placeholder="Search....">
+                <a href="#" class="searchbar-clear"></a>
+            </div>
+            <a href="#" class="searchbar-cancel">Cancel</a>
+        </form>
+
+        <div class="searchbar-overlay"></div>
+
+        <!-- Scrollable page content-->
+        <div class="page-content">
+           
+            <div class="content-block searchbar-not-found">
+                <div class="content-block-inner">Nothing found</div>
+            </div>
+            <div id="promotiondetailmessage" style="padding:7px;font-size:medium;display:none;background-color:#f2dede;border:solid 1px #ebccd1;color:#a94442;border-radius:4px;"></div>
+            <div class="list-block list-block-searchh searchbar-found media-list no-margin" id="promotionDetail">
+            </div>
+
+            <div id="noconnectionfoundcardoh" class="card" style="display:none;">
+                <div class="card-header"><!--<i class="ion-alert-circled"></i>&nbsp;-->No Connection Found!!</div>
+                <div class="card-content">
+                    <div class="card-content-inner">This feature requires internet connection, please check your network settings for connection.</div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>

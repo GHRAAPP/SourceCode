@@ -1,0 +1,505 @@
+
+<!-- We don't need full layout here, because this page will be parsed with Ajax-->
+<!-- Top Navbar-->
+
+
+
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="left"><a href="#" class="back link"> <i class="icon icon-back"></i><span>Back</span></a></div>
+        <div class="center sliding" id="productSelect">Select a Category</div>
+        <div class="right">
+            <!-- Right link contains only icon - additional "icon-only" class--><a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="pages">
+  <!-- Page, data-page contains page name-->
+  <div data-page="products" class="page">
+      
+    <!-- Scrollable page content-->
+    
+      <form class="searchbar searchbar-init" data-search-list=".list-block-searchp" data-search-in=".item-title" data-found=".searchbar-found" data-not-found=".searchbar-not-found">
+          <div class="searchbar-input">
+              <input id="pdsearch" type="search" placeholder="Search">
+              <a href="#" class="searchbar-clear"></a>
+          </div>
+          <a href="#" class="searchbar-cancel">Cancel</a>
+      </form>
+
+      <div class="searchbar-overlay"></div>
+
+      <div class="page-content">
+
+          <!--<div class="content-block no-padding no-margin">
+              <div class="content-block-inner no-padding no-margin">-->
+
+                  <div class="content-block searchbar-not-found">
+                      <div class="content-block-inner">Nothing found</div>
+                  </div>
+
+                  
+
+                    <div class="list-block accordion-list no-margin list-block-searchp searchbar-found" id="productContent">
+           <!-- <ul>
+                <li class="accordion-item">
+                    <a href="#" class="item-content item-link">
+                        <div class="item-inner">
+                            <div class="item-title">Cigarettes</div>
+                        </div>
+                    </a>
+                    <div class="accordion-item-content">
+                        <div class="content-block">
+                            <ul>
+                                <li>
+                                    <div class="item-content">
+                                        <a href="ProductList.html" style="width:100%">
+                                            <div class="item-inner">
+                                                <div class="item-title">Premium Cigarettes</div><i class="fa fa-angle-right"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-content">
+                                        <a href="ProductList.html" style="width:100%">
+                                            <div class="item-inner">
+                                                <div class="item-title">Branded Discount Cigarettes</div><i class="fa fa-angle-right"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-content">
+                                        <a href="ProductList.html" style="width:100%">
+                                            <div class="item-inner">
+                                                <div class="item-title">Sub-generic/Private Label</div><i class="fa fa-angle-right"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-content">
+                                        <a href="ProductList.html" style="width:100%">
+                                            <div class="item-inner">
+                                                <div class="item-title">Imported Cigarettes</div><i class="fa fa-angle-right"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-content">
+                                        <a href="ProductList.html" style="width:100%">
+                                            <div class="item-inner">
+                                                <div class="item-title">Fourth Tier Cigarettes</div><i class="fa fa-angle-right"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="accordion-item">
+                    <a href="#" class="item-content item-link">
+                        <div class="item-inner">
+                            <div class="item-title">Packaged Beverages</div>
+                        </div>
+                    </a>
+                    <div class="accordion-item-content">
+                        <div class="content-block">
+                            <ul>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-title"><a href="#">All</a></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-title"><a href="#">Iced Tea (Ready-to-drink)</a></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-title"><a href="#">Sports Drinks</a></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-title"><a href="#">Juice/Juice Drinks</a></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-title"><a href="#">Enhanced Water</a></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-title"><a href="#">Bottled Water</a></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-title"><a href="#">Carbonated Soft Drinks</a></div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="accordion-item">
+                    <a href="#" class="item-content item-link">
+                        <div class="item-inner">
+                            <div class="item-title">Snacks</div>
+                        </div>
+                    </a>
+                    <div class="accordion-item-content">
+                        <div class="content-block">
+                            <ul>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-title"><a href="#">All</a></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-title"><a href="#">Meat Snacks</a></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-title"><a href="#">Granola/Fruit Snacks</a></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-title"><a href="#">Health/Energy/Protein Bars</a></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-title"><a href="#">Other Alternative Snacks</a></div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="accordion-item">
+                    <a href="#" class="item-content item-link">
+                        <div class="item-inner">
+                            <div class="item-title">Liquor</div>
+                        </div>
+                    </a>
+                    <div class="accordion-item-content">
+                        <div class="content-block">
+                            <ul>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-title"><a href="#">All</a></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-title"><a href="#">Distilled Spirits</a></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-title"><a href="#">Prepared Cocktails</a></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-title"><a href="#">Cordials/Brandy/Cognac</a></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-title"><a href="#">Cocktail Mixes</a></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-title"><a href="#">Other Liquor</a></div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="accordion-item">
+                    <a href="#" class="item-content item-link">
+                        <div class="item-inner">
+                            <div class="item-title">Packaged Bread</div>
+                        </div>
+                    </a>
+                    <div class="accordion-item-content">
+                        <div class="content-block">
+                            <ul>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-title"><a href="#">All</a></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-title"><a href="#">Premium Cigrattes</a></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-title"><a href="#">Generic Cigratte</a></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-title"><a href="#">E-Cigrattes</a></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-title"><a href="#">Cigars</a></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-title"><a href="#">Little Cigars</a></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-title"><a href="#">Snuff</a></div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="accordion-item">
+                    <a href="#" class="item-content item-link">
+                        <div class="item-inner">
+                            <div class="item-title">Fluid Milk Products</div>
+                        </div>
+                    </a>
+                    <div class="accordion-item-content">
+                        <div class="content-block">
+                            <ul>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-title"><a href="#">All</a></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-title"><a href="#">Iced Tea (Ready-to-drink)</a></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-title"><a href="#">Sports Drinks</a></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-title"><a href="#">Juice/Juice Drinks</a></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-title"><a href="#">Enhanced Water</a></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-title"><a href="#">Bottled Water</a></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-title"><a href="#">Carbonated Soft Drinks</a></div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="accordion-item">
+                    <a href="#" class="item-content item-link">
+                        <div class="item-inner">
+                            <div class="item-title">Edible Grocery</div>
+                        </div>
+                    </a>
+                    <div class="accordion-item-content">
+                        <div class="content-block">
+                            <ul>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-title"><a href="#">All</a></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-title"><a href="#">Meat Snacks</a></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-title"><a href="#">Granola/Fruit Snacks</a></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-title"><a href="#">Health/Energy/Protein Bars</a></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-title"><a href="#">Other Alternative Snacks</a></div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="accordion-item">
+                    <a href="#" class="item-content item-link">
+                        <div class="item-inner">
+                            <div class="item-title">Frozen Foods</div>
+                        </div>
+                    </a>
+                    <div class="accordion-item-content">
+                        <div class="content-block">
+                            <ul>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-title"><a href="#">All</a></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-title"><a href="#">Distilled Spirits</a></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-title"><a href="#">Prepared Cocktails</a></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-title"><a href="#">Cordials/Brandy/Cognac</a></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-title"><a href="#">Cocktail Mixes</a></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-title"><a href="#">Other Liquor</a></div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>-->
+        </div>
+
+                 
+              <!--</div>
+          </div>-->
+      </div>
+  </div>
+</div>

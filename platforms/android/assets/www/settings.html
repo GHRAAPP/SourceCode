@@ -1,0 +1,73 @@
+<!-- We don't need full layout here, because this page will be parsed with Ajax-->
+<!-- Top Navbar-->
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="left"><a href="#" class="back link"> <i class="icon icon-back"></i><span>Back</span></a></div>
+        <div class="center sliding">Settings</div>
+        <div class="right">
+            <!-- Right link contains only icon - additional "icon-only" class--><a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a>
+        </div>
+    </div>
+</div>
+<div class="pages">
+    <!-- Page, data-page contains page name-->
+    <div data-page="settings" class="page">
+        <!-- Scrollable page content-->
+        <div class="page-content">
+            <div class="content-block no-margin">
+                <div class="content-block-title" style="margin-top:15px;"><strong>User Profile (<span id="storeName"></span>)</strong></div>
+                <div class="list-block" style="margin-bottom:0px;">
+                    <ul>
+                        <!-- Text inputs -->
+                        <li>
+                            <div class="item-content">
+
+                                <div class="item-inner">
+                                    <div class="label">
+                                        <span id="CompanyName"></span><br />
+                                        <span id="storeAddress"></span><br />
+                                        <span id="storePhone"></span><br />
+                                        <span id="storeEmail"></span><br />
+                                        <span id="storeDay"></span><br />
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="content-block-title" style="margin-top:20px;">
+                    <h3 class="no-margin no-padding">
+                        <strong>Admin Options</strong><br/>
+                        <span><i class="ion-android-sync"></i>&nbsp;<small id="lastupdate"></small></span>
+                    </h3>
+                </div>
+                <div style="padding-bottom:7px;margin-top:0px;margin-left:15px;">Please use below options under techinal support instructions.</div>
+                <div class="list-block" style="margin-top:0px;">
+                    <div style="margin:10px;">
+                        <a href="#" class="button button-big open-popup" id="getUserInfo" data-popup=".popup-services"><span class="ion-iphone font23"></span>&nbsp;&nbsp;<span>Contact Info</span> </a>
+                    </div>
+                    <div style="margin:10px;">
+                        <a href="#" class="button button-big" id="emptycartbtn" onclick="emptyCart(); return false;"><span class="ion-ios-cart-outline font23"></span>&nbsp;&nbsp;<span>Empty My Cart</span> </a>
+                    </div>
+                    <!-- Text inputs -->
+                    <div style="margin:10px;">
+                        <a href="#" class="button button-big" id="sendErrorBtn"><span class="ion-bug font23"></span>&nbsp;&nbsp;<span>Send Logs</span> </a>
+                    </div>
+                    <div style="margin:10px;">
+                        <a href="#" class="button button-big" id="syncdbbtn" onclick="syncData(); return false;"><span class="ion-android-sync font23"></span>&nbsp;&nbsp;<span>Sync Database</span> </a>
+                    </div>
+                    <div style="margin:10px;">
+                        <a href="lastorder.html" class="button button-big" id="lastorderbtn"><span class="ion-ios-star font23"></span>&nbsp;&nbsp;<span>Last Submitted Order</span> </a>
+                    </div>
+                    <div style="margin:10px;">
+                        <a href="#" class="button button-big" id="dblastorderbtn" onclick="EmailCart(); return false;"><span class="ion-email font23"></span>&nbsp;&nbsp;<span>Email Cart Data</span> </a>
+                    </div>
+                    <div style="margin:10px;">
+                        <a href="#" class="button button-big" id="dblastorderbtnttt" onclick="resetData(); return false;"><span class="ion-ios-refresh font23"></span>&nbsp;&nbsp;<span>Reset Application</span> </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

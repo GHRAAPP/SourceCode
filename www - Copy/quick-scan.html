@@ -1,0 +1,33 @@
+<!-- We don't need full layout here, because this page will be parsed with Ajax-->
+<!-- Top Navbar-->
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="left"><a href="#" class="back link"> <i class="icon icon-back"></i><span>Back</span></a></div>
+        <div class="center sliding">Quick Scan</div>
+        <div class="right">
+            <!-- Right link contains only icon - additional "icon-only" class--><a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a>
+        </div>
+    </div>
+</div>
+<div class="pages">
+    <div data-page="quickscan" class="page">
+        <!-- Scrollable page content-->
+        <div class="page-content" id="scanpage" style="margin-right:20px;margin-left:20px;margin-top:5px;">
+                    <a href="#" onclick="scanbarcode();">
+                        <img src="img/icons/quickScanPage.png" class="fullWidth" />
+                    </a>
+                
+                    <div style="text-align:center;border:2px #777777 solid;padding:10px;padding-bottom:0px;border-radius:9px;">
+                        <form id="target">
+                            <input id="scantext" tabindex="1" type="text" style="height:45px;width:240px;font-size:large;padding:0px;font-weight:bold;letter-spacing:2px;border:none;padding:0px;margin:0px;margin-bottom:5px;text-align:center;background-color: black; color: white;" />
+                        <!--<input id="hiddenscantext" tabindex="2" type="text" style="opacity:0;height:0px;padding:0px;margin:0px;border:none;" />-->
+                            <input type="submit" style="display:none;" />
+                            <div style="text-align:center;">Enter or Scan UPC/SKU</div>
+                        </form>
+                    </div>
+            
+            <!--<a href="search.html" class="button button-big button-fill" style="margin:50px 30px 0px 30px;letter-spacing:1px;"><span class="ion-ios-search-strong" style="font-size:large"></span>&nbsp;&nbsp;SEARCH PRODUCT</a>-->
+            <div style="text-align:center;"><img src="img/log.png" style="width:65%;opacity:0.2;" /></div>
+        </div>
+    </div>
+</div>
